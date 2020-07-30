@@ -1,6 +1,5 @@
 #include <getch.h>
 #include "tools.h"
-#include "status.h"
 
 // 获取当前年份
 uint16_t get_current_year(void)

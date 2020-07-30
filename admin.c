@@ -1,7 +1,6 @@
-#include "sams.h"
 #include "admin.h"
 #include "manager.h"
-#include "status.h"
+#include "tools.h"
 
 // 根据帐号查找管理员对象的下标
 int admin_find_mgr(uint32_t id)

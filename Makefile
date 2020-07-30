@@ -10,22 +10,22 @@ all:$(OBJ)
 main.o:main.c sams.h
 	$(CC) $(STD) $(FLAG) -c $< 
 
-sams.o:sams.c sams.h
+sams.o:sams.c sams.h admin.h manager.h teacher.h student.h tools.h
 	$(CC) $(STD) $(FLAG) -c $< 
 
-admin.o:admin.c admin.h
+admin.o:admin.c admin.h manager.h tools.h
 	$(CC) $(STD) $(FLAG) -c $< 
 
-manager.o:manager.c manager.h
+manager.o:manager.c manager.h teacher.h tools.h
 	$(CC) $(STD) $(FLAG) -c $< 
 
-teacher.o:teacher.c teacher.h
+teacher.o:teacher.c teacher.h student.h tools.h
 	$(CC) $(STD) $(FLAG) -c $< 
 
-student.o:student.c student.h
+student.o:student.c student.h tools.h
 	$(CC) $(STD) $(FLAG) -c $< 
 
-tools.o:tools.c tools.h
+tools.o:tools.c tools.h status.h 
 	$(CC) $(STD) $(FLAG) -c $< 
 
 clean:

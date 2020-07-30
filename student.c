@@ -1,10 +1,10 @@
 #include "student.h"
-#include "status.h"
+#include "tools.h"
 
 // 学生数组指针
 Student* stu_a;
 // 学生数组使用量
-size_t stu_n;
+uint32_t stu_n;
 
 // 语言成绩比较
 int stu_cmp_c(const void* stu_p1,const void* stu_p2)

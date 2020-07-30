@@ -1,11 +1,9 @@
-#include <strings.h>
 #include "teacher.h"
 #include "student.h"
-#include "sams.h"
-#include "status.h"
+#include "tools.h"
 
 Teacher* tch_a;
-size_t tch_n;
+uint32_t tch_n;
 
 int tch_find_stu(uint32_t id)
 {
@@ -20,7 +18,7 @@ int tch_find_stu(uint32_t id)
 // 单个添加学生
 void tch_add_one_stu()
 {
-    bzero(stu_a+stu_n,sizeof(Student));
+    memset(stu_a+stu_n,0,sizeof(Student));
     
     pf("请输入学生姓名:");
     get_str(stu_a[stu_n].name,20);

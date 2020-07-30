@@ -1,7 +1,6 @@
 #ifndef TEACHER_H
 #define TEACHER_H
-
-#include "tools.h"
+#include "status.h"
 
 #define T_DATA_PATH     "data/t_data.bin"
 #define TD_DATA_PATH    "data/td_data.bin"
@@ -19,7 +18,7 @@ typedef struct Teacher
 }Teacher;
 
 extern Teacher* tch_a;
-extern size_t tch_n;
+extern uint32_t tch_n;
 
 // 教师登陆
 int tch_login(const char* id_p,const char* pd_p);

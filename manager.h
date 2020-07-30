@@ -1,11 +1,10 @@
 #ifndef MANAGER_H
 #define MANAGER_H
-
-#include "tools.h"
+#include "status.h"
 
 #define M_DATA_PATH     "data/m_data.bin"
 #define MD_DATA_PATH    "data/md_data.bin"
-#define MGR_MAX     5
+#define MGR_MAX     	5
 
 typedef struct Manager
 {

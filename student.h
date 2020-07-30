@@ -1,7 +1,6 @@
 #ifndef STUDENT_H
 #define STUDENT_H
-
-#include "tools.h"
+#include "status.h"
 
 #define S_DATA_PATH     "data/s_data.bin"
 #define SD_DATA_PATH    "data/sd_data.bin"
@@ -26,7 +25,7 @@ typedef struct Student
 // 学生数组指针
 extern Student* stu_a;
 // 学生数组使用量
-extern size_t stu_n;
+extern uint32_t stu_n;
 
 // 学生登陆
 int stu_login(const char* id_p,const char* pd_p);

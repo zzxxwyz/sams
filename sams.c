@@ -1,10 +1,9 @@
-#include <malloc.h>
 #include "sams.h"
 #include "admin.h"
 #include "manager.h"
 #include "teacher.h"
 #include "student.h"
-#include "status.h"
+#include "tools.h"
 
 uint32_t* id_a;
 

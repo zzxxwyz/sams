@@ -1,12 +1,13 @@
 #ifndef TOOLS_H
 #define TOOLS_H
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
 #include <string.h>
-#include <stdbool.h>
 #include <time.h>
+#include "status.h"
+
+#define ID_PATH 		"data/id.bin"
+extern uint32_t* id_a;
 
 #define pf  printf
 #define sf  scanf

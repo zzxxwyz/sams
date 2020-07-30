@@ -1,5 +1,8 @@
 #ifndef STATUS_H
 #define STATUS_H
+#include <stdint.h>
+#include <limits.h>
+#include <stdbool.h>
 
 typedef enum 
 {

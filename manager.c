@@ -1,8 +1,8 @@
-#include <strings.h>
-#include "sams.h"
 #include "manager.h"
 #include "teacher.h"
-#include "status.h"
+#include "tools.h"
+
+
 
 // 管理员数组指针
 Manager* mgr_a;
@@ -22,7 +22,7 @@ int mgr_find_tch(uint32_t id)
 // 添加一个教师
 void mgr_add_one_tch(void)
 {
-    bzero(tch_a+tch_n,sizeof(Teacher));
+    memset(tch_a+tch_n,0,sizeof(Teacher));
 
     pf("请输入教师姓名:");
     get_str(tch_a[tch_n].name,20);
